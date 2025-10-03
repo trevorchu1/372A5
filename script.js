@@ -1,11 +1,11 @@
 // constants
 const THROWS = ["rock", "paper", "scissors"];
 const IMG_BY_THROW = {
-  rock: "img/rock.png",
-  paper: "img/paper.png",
-  scissors: "img/scissors.png",
+  rock: "img/rock.PNG",
+  paper: "img/paper.PNG",
+  scissors: "img/scissors.PNG",
 };
-const QUESTION = { src: "img/question-mark.png", label: "?" };
+const QUESTION = { src: "img/question-mark.PNG", label: "?" };
 
 let isPlaying = false;
 let shuffleTimer = null; 
