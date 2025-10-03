@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="container">
+    <h1>Rock Paper Scissors</h1>
+  </header>
+
+  <main class="container">
+    <!-- player section -->
+    <section aria-labelledby="player-title" class="panel" id="player-section">
+      <h2 id="player-title">Your Throw</h2>
+
+      <div class="choices" role="list">
+        <figure class="choice" role="listitem" data-throw="rock" tabindex="0" aria-pressed="false">
+          <img src="img/rock.png" alt="Rock" />
+          <figcaption>Rock</figcaption>
+        </figure>
+
+        <figure class="choice" role="listitem" data-throw="paper" tabindex="0" aria-pressed="false">
+          <img src="img/paper.png" alt="Paper" />
+          <figcaption>Paper</figcaption>
+        </figure>
+
+        <figure class="choice" role="listitem" data-throw="scissors" tabindex="0" aria-pressed="false">
+          <img src="img/scissors.png" alt="Scissors" />
+          <figcaption>Scissors</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- computer section -->
+    <section aria-labelledby="computer-title" class="panel" id="computer-section">
+      <h2 id="computer-title">Computer Throw</h2>
+      <figure class="computer-figure">
+        <img id="computer-img" src="img/question-mark.PNG" alt="Computer is thinking…" />
+        <figcaption id="computer-caption">?</figcaption>
+      </figure>
+    </section>
+
+    <!-- outcome -->
+    <section aria-labelledby="outcome-title" class="panel" id="outcome-section">
+      <h2 id="outcome-title">Outcome</h2>
+      <p id="outcome-text" aria-live="polite">Make your move to begin.</p>
+    </section>
+
+    <!-- scoreboard -->
+    <section aria-labelledby="score-title" class="panel" id="score-section">
+      <h2 id="score-title">Score</h2>
+      <div class="score">
+        <div><strong>Wins:</strong> <span id="wins">0</span></div>
+        <div><strong>Losses:</strong> <span id="losses">0</span></div>
+        <div><strong>Ties:</strong> <span id="ties">0</span></div>
+      </div>
+      <div class="controls">
+        <button id="reset-btn" type="button">Reset</button>
+      </div>
+    </section>
+  </main>
+
+
+  <script src="script.js" defer></script>
+</body>
+</html>
